@@ -1,0 +1,19 @@
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: kuda-prover
+    ports:
+      - '5433:5432'
+    volumes:
+      - ponder-postgres-volume:/var/lib/postgresql/data
+
+volumes:
+  ponder-postgres-volume:
+    driver: local
+    driver_opts:
+      type: none
+      device: ./.ponder/postgres
+      o: bind

@@ -1,0 +1,43 @@
+{
+    "name": "kuda-prover",
+    "version": "0.0.1",
+    "description": "Prover that creates inclusion proofs against a challenge to a tak on KUDA",
+    "author": "Johanan Wahlang <johanan@riskharbor.com>",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "ponder dev",
+        "start": "ponder start",
+        "codegen": "ponder codegen",
+        "lint": "eslint .",
+        "typecheck": "tsc",
+        "format": "prettier --loglevel silent --write src/**/*.ts"
+    },
+    "dependencies": {
+        "@chainsafe/persistent-merkle-tree": "^0.8.0",
+        "@chainsafe/ssz": "^0.17.1",
+        "@lodestar/types": "^1.21.0",
+        "@ponder/core": "0.6.4",
+        "axios": "^1.7.2",
+        "c-kzg": "^4.0.1",
+        "envalid": "^8.0.0",
+        "mcl-wasm": "^1.5.0",
+        "viem": "^2.9.17"
+    },
+    "devDependencies": {
+        "@types/node": "22.7.4",
+        "@typescript-eslint/eslint-plugin": "6.3.0",
+        "@typescript-eslint/parser": "6.3.0",
+        "eslint": "8.0.0",
+        "eslint-config-ponder": "0.6.4",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-prettier": "^5.1.3",
+        "eslint-plugin-simple-import-sort": "^12.1.0",
+        "lint-staged": "^15.2.7",
+        "prettier": "^3.3.2",
+        "typescript": "^5.2.2"
+    },
+    "engines": {
+        "node": ">=18.14"
+    }
+}
