@@ -18,7 +18,7 @@
         "@chainsafe/ssz": "^0.17.1",
         "@lodestar/types": "^1.21.0",
         "@ponder/core": "0.6.4",
-        "axios": "^1.7.2",
+        "axios": "^1.7.4",
         "c-kzg": "^4.0.1",
         "envalid": "^8.0.0",
         "mcl-wasm": "^1.5.0",
