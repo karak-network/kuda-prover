@@ -3,7 +3,6 @@ name: Create and publish a prover image to GitHub Container Registry
 on:
   push:
     branches: ['main']
-    paths: ['prover/**']
 
 env:
   REGISTRY: ghcr.io
